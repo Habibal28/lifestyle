@@ -1,0 +1,272 @@
+/** @format */
+
+:root {
+  --primary-color: #cb8173;
+  --secondary-color: #806f66;
+  --background-color: #f1f1f0;
+  --button-color-dark: #36383d;
+  --icon-color: #333333;
+}
+
+body {
+  font-family: "Source Serif Pro", serif;
+  overflow-x: hidden;
+}
+
+/* ---------------------- navbar --------------------- */
+.navbar .navbar-brand {
+  width: 30px;
+}
+
+/* ---------------------thumbnail--------------------- */
+.thumbnail .image {
+  height: 360px;
+  background-image: url("../img/thumbnail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+}
+
+.image h1 {
+  color: white;
+  text-align: center;
+  margin: auto;
+  transform: translateY(100px);
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail p {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tombol {
+  display: block;
+  background-color: var(--primary-color);
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 35px;
+}
+.tombol:hover {
+  color: var(--primary-color);
+  background-color: rgba(213, 213, 213, 0.7);
+}
+
+/* ------------------------- Gallery Quote ------------------- */
+.gallery {
+  margin-bottom: 650px;
+}
+
+.gallery .row {
+  background-color: var(--background-color);
+  height: 785px;
+  box-sizing: border-box;
+}
+
+.gallery .box {
+  position: relative;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.gallery .gambar1 {
+  background-image: url(../img/gambar1.jpg);
+}
+.gallery .gambar2 {
+  background-image: url(../img/gambar2.jpg);
+}
+.gallery .gambar3 {
+  background-image: url(../img/gambar3.jpg);
+}
+.gallery .gambar4 {
+  background-image: url(../img/water.jpg);
+}
+.gallery img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 50px;
+  top: 20px;
+  z-index: 1;
+}
+.gallery p {
+  background-color: var(--primary-color);
+  color: white;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  padding: 100px 20px;
+  right: 0;
+  top: 0;
+  opacity: 0.8;
+}
+
+/*------------------------------- blog ---------------*/
+
+.blog {
+  margin-bottom: 30px;
+}
+.blog .container {
+  margin: auto;
+  height: 500px;
+  padding: 100px 0;
+}
+.container h4 {
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+.container p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+/* ------------------- thumbnail2 ---------------------*/
+.thumbnail2 {
+  background-image: url(../img/work.jpg);
+  height: 525px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ------------------- Card ---------------------------- */
+
+.kartu {
+  height: 600px;
+  padding: 150px 100px;
+  text-align: center;
+}
+.kartu h3 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.kartu p {
+  font-family: "Source sans Pro", serif;
+  font-weight: 300;
+  font-size: 26px;
+}
+
+.cards .card-1 {
+  background-color: var(--primary-color);
+  color: white;
+}
+.cards .tombol-card-light {
+  display: block;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 35px;
+}
+.cards .tombol-card-dark {
+  display: block;
+  background-color: #36383d;
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 35px;
+}
+.tombol-card-light:hover {
+  color: white;
+  background-color: #36383d;
+}
+.tombol-card-dark:hover {
+  color: w;
+  background-color: var(--primary-color);
+}
+/* responsive */
+@media (min-width: 992px) {
+  .navbar .navbar-nav {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Source sans Pro", serif;
+  }
+  .navbar .navbar-brand {
+    margin-left: -45em;
+  }
+  .navbar .nav-link {
+    margin: 0 2.8em;
+    color: black !important;
+  }
+  .thumbnail p {
+    width: 60%;
+    font-size: 24px;
+  }
+  .thumbnail .tombol {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+  }
+  .image h1 {
+    color: white;
+    float: right;
+    transform: translate(-100px, 250px);
+  }
+  .gallery {
+    margin-bottom: 0;
+  }
+  .gallery .box {
+    margin: 20px 40px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+  }
+  .gallery p {
+    width: 30%;
+    opacity: 1;
+  }
+  .gallery img {
+    right: 40;
+  }
+
+  .container h4 {
+    font-size: 26px;
+    padding: 40px 0;
+  }
+  .container p {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+
+  .kartu p {
+    padding: 20px 60px;
+  }
+}
