@@ -190,7 +190,6 @@ body {
   padding: 5px;
   text-align: center;
   margin: auto;
-  margin-bottom: 20px;
 }
 .cards .tombol-card-dark {
   display: block;
@@ -204,7 +203,6 @@ body {
   padding: 5px;
   text-align: center;
   margin: auto;
-  margin-bottom: 20px;
 }
 .tombol-card-light:hover {
   color: white;
